@@ -1,4 +1,4 @@
-// import
+import { SMG, AR, SG, Melee, Launchers } from "../src/js/weapons.js"
 
 describe('SMG', () => {
   test('should check predetermined stat values to SMG', () => {
@@ -15,5 +15,7 @@ describe('SMG', () => {
 // describe('SG')
 
 // describe('Melee')
+
+// describe('Launchers')
 
 // (SMG, AR, SG, Melee, Launchers) Weapon Types
