@@ -5,3 +5,9 @@ export const SMG = {
   atk: 4,
   dmg: 5
 }
+
+export const AR ={
+  dex: 2,
+  atk: 5,
+  dmg: 7
+}

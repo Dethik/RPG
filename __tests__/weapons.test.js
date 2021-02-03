@@ -10,7 +10,15 @@ describe('SMG', () => {
   })
 });
 
-// describe('AR')
+describe('AR', () => {
+  test('should check predetermined stat values to AR', () => {
+    expect(AR).toEqual({
+      dex: 2,
+      atk: 5,
+      dmg: 7
+    })
+  })
+});
 
 // describe('SG')
 
