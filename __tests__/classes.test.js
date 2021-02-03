@@ -1,4 +1,3 @@
-import { TestScheduler } from "jest"
 import { soldier, techromancer, medic, scoundrel } from "../src/js/classes.js"
 
 describe('soldier', () => {
@@ -25,7 +24,7 @@ describe('techromancer', () => {
       int: 2,
       wis: 1,
       cha: 6,
-      atk: 2
+      atk: 3
     })
   })
 });
@@ -40,6 +39,20 @@ describe('medic', () => {
       wis: 6,
       cha: 2,
       atk: 1
+    })
+  })
+});
+describe('scoundrel', () => {
+  test('should check predefined stat values of the scounrel', () => {
+    expect(scoundrel).toEqual({
+      hp: 12,
+      str: 1,
+      dex: 6,
+      con: 3,
+      int: 2,
+      wis: 3,
+      cha: 2,
+      atk: 3
     })
   })
 });

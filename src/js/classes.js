@@ -18,7 +18,7 @@ export const techromancer = {
   int: 2,
   wis: 1,
   cha: 6,
-  atk: 2
+  atk: 3
 }
 export const medic = {
   hp: 16,
@@ -30,4 +30,13 @@ export const medic = {
   cha: 2,
   atk: 1
 }
-// scoundrel
+export const scoundrel = {
+  hp: 12,
+  str: 1,
+  dex: 6,
+  con: 3,
+  int: 2,
+  wis: 3,
+  cha: 2,
+  atk: 3
+}
