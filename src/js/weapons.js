@@ -17,3 +17,10 @@ export const SG = {
   atk: 4,
   dmg: 2*4
 }
+
+export const Melee = {
+  str: 2,
+  atk: 3,
+  dmg: 7
+}
+
