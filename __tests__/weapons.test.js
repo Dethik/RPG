@@ -20,7 +20,15 @@ describe('AR', () => {
   })
 });
 
-// describe('SG')
+describe('SG', () => {
+  test('should check predetermined stat values to Shotgun', () => {
+    expect(SG).toEqual({
+      str: 1,
+      atk: 4,
+      dmg: 2*4
+    })
+  })
+});
 
 // describe('Melee')
 

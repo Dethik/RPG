@@ -11,3 +11,9 @@ export const AR ={
   atk: 5,
   dmg: 7
 }
+
+export const SG = {
+  str: 1,
+  atk: 4,
+  dmg: 2*4
+}
