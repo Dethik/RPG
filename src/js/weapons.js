@@ -24,3 +24,8 @@ export const Melee = {
   dmg: 7
 }
 
+export const Launchers = {
+  wis: 3,
+  atk: 3,
+  dmg: 15
+}

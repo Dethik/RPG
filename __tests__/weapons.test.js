@@ -40,14 +40,14 @@ describe('Melee', () => {
   })
 });
 
-// describe('Launchers', () => {
-//   test('should check predetermined stat values to Launcher', () => {
-//     expect(Melee).toEqual({
-//       str: 2,
-//       atk: 3,
-//       dmg: 7
-//     })
-//   })
-// });
+describe('Launchers', () => {
+  test('should check predetermined stat values to Kaboomers', () => {
+    expect(Launchers).toEqual({
+      wis: 3,
+      atk: 3,
+      dmg: 15
+    })
+  })
+});
 
 // (SMG, AR, SG, Melee, Launchers) Weapon Types
