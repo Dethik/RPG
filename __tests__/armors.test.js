@@ -30,6 +30,14 @@ describe('Medium', () => {
   })
 })
 
-// describe('')
+describe('Light', () => {
+  test('should check predetermined stats values to Light armor', () => {
+    expect(Light).toEqual({
+      con: 1,
+      dex: 1,
+      cha: 3
+    })
+  })
+})
 
 // (Power, Heavy, Medium, Light) Armor Types

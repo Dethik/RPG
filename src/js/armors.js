@@ -15,3 +15,8 @@ export const Medium = {
   dex: 3,
   cha: 1
 }
+export const Light = {
+  con: 1,
+  dex: 1,
+  cha: 3
+}
