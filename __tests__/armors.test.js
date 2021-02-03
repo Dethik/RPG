@@ -10,9 +10,25 @@ describe('Power', () => {
   })
 })
 
-// describe('')
+describe('Heavy', () => {
+  test('should check predetermined stats values to Heavy armor', () => {
+    expect(Heavy).toEqual({
+      con: 3,
+      str: 1,
+      wis: 3
+    })
+  })
+})
 
-// describe('')
+describe('Medium', () => {
+  test('should check predetermined stats values to Medium armor', () => {
+    expect(Medium).toEqual({
+      con: 2,
+      dex: 3,
+      cha: 1
+    })
+  })
+})
 
 // describe('')
 
