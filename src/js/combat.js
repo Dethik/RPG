@@ -28,7 +28,7 @@ export class Combat {
     // if (attackRoll > enemy.con) {
     //   this.enemyHpRemain = enemy.hp - character.weaponType.dmg
     // } else {
-    //   return "miss";
+      return "miss";
     // }
   }
 }
