@@ -17,4 +17,8 @@ export default class Character {
   addWeapon(userWeapon) {
     this.weaponType = userWeapon;
   }
+
+  addArmor(userArmor) {
+    
+  }
 }

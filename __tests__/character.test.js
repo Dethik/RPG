@@ -31,3 +31,12 @@ describe('Character.addWeapon', () => {
     expect(character.weaponType).toEqual(weapons.Melee);
   });
 });
+
+describe('Character.addArmor', () => {
+  test('Should properly assign a class to a character', () => {
+    const character = new Character("Brute");
+    const userArmor = armors.Power
+    character.addArmor(userArmor)
+    expect(character.armorType).toEqual(armors.Power);
+  });
+});
