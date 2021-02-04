@@ -14,40 +14,14 @@ describe('Character', () => {
   });
 });
 
-// describe('Character.addClass', () => {
-//   test('Should properly assign a class to a character', () => {
-//     const character = new Character("Brute");
-//     const userClass = classes.soldier
-//     character.addClass(userClass)
-//     expect(character.pcClass).toEqual(classes.soldier);
-//   });
-// });
-
-// describe('Character.addWeapon', () => {
-//   test('Should properly assign a class to a character', () => {
-//     const character = new Character("Brute");
-//     const userWeapon = weapons.Melee
-//     character.addWeapon(userWeapon)
-//     expect(character.weaponType).toEqual(weapons.Melee);
-//   });
-// });
-
-// describe('Character.addArmor', () => {
-//   test('Should properly assign a class to a character', () => {
-//     const character = new Character("Brute");
-//     const userArmor = armors.Power
-//     character.addArmor(userArmor)
-//     expect(character.armorType).toEqual(armors.Power);
-//   });
-// });
-
 describe('Character.createCharacter', () => {
   test('Should properly assign class, weapon, and armor to a character', () => {
-    const character = new Character("Brute");
-    const userArmor = armors.Power
-    const userWeapon = weapons.Melee
-    const userClass = classes.soldier
-    character.createCharacter(userClass, userWeapon, userArmor)
-    expect(character).toEqual("Brute", classes.soldier, weapons.Melee, armors.Power);
+    const userInputA = armors.Power
+    const userInputW = weapons.Melee
+    const userInputC = classes.soldier
+    const name = "Brute"
+    const character = new Character(name, userInputC, userInputW, userInputA);
+    // character.createCharacter(userInputC, userInputW, userInputA)
+    expect(character).toEqual({"armorType": {"con": 4, "str": 3, "wis": 1}, "name": "Brute", "pcClass": {"atk": 2, "cha": 2, "con": 4, "dex": 1, "hp": 20, "int": 1, "str": 6, "wis": 1}, "weaponType": {"atk": 3, "dmg": 7, "str": 2}});
   });
 });
