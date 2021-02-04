@@ -13,4 +13,8 @@ export default class Character {
   addClass(userClass) {
     this.pcClass = userClass;
   }
+
+  addWeapon(userWeapon) {
+    
+  }
 }

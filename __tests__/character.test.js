@@ -17,12 +17,17 @@ describe('Character', () => {
 describe('Character.addClass', () => {
   test('Should properly assign a class to a character', () => {
     const character = new Character("Brute");
-    // const userClass = soldier;
-    // addClass(userClass) {
-    //   this.pcClass[soldier] = userClass;
-    // }
     const userClass = classes.soldier
     character.addClass(userClass)
     expect(character.pcClass).toEqual(classes.soldier);
+  });
+});
+
+describe('Character.addWeapon', () => {
+  test('Should properly assign a class to a character', () => {
+    const character = new Character("Brute");
+    const userWeapon = weapons.Melee
+    character.addWeapon(userWeapon)
+    expect(character.weaponType).toEqual(weapons.Melee);
   });
 });
