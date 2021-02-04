@@ -1,5 +1,6 @@
 // (Techromancer(cha), Soldier(str), Medic(wis), Scoundrel(dex)) Classes
 
+class Classes {}
 export const soldier = {
   hp: 20,
   str: 6,

@@ -1,8 +1,16 @@
+import { soldier, techromancer, medic, scoundrel } from "./classes.js"
+import { SMG, AR, SG, Melee, Launchers } from "./weapons.js"
+import { Power, Heavy, Medium, Light } from "./armors.js"
+
 export default class Character {
-  constructor(name, pcClass, weaponType, armorType) {
+  constructor(name) {
     this.name = name;
-    this.pcClass = pcClass;
-    this.weaponType = weaponType;
-    this.armorType = armorType;
+    this.pcClass = {};
+    this.weaponType = {};
+    this.armorType = {};
+  }
+
+  addClass(userClass) {
+    this.pcClass[userClass] = soldier;
   }
 }

@@ -1,5 +1,6 @@
 // (SMG, AR, SG, Melee, Launchers) Weapon Types
 
+class Weapons {}
 export const SMG = {
   dex: 1,
   atk: 4,
