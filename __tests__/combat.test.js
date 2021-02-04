@@ -41,4 +41,11 @@ describe('playerTurn', () => {
     combat.playerTurn();
     expect(combat.turns).toEqual(1);
   })
+  test('checks that the attack roll is 1-6', () => {
+    const combat = new Combat();
+    combat.playerTurn();
+    // const attackRoll = Math.floor(Math.random() * Math.floor(6)) + 1
+    expect(combat.roll).toBeGreaterThan(0);
+    expect(combat.roll).toBeLessThanOrEqual(6);
+  })
 });
