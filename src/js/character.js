@@ -10,15 +10,22 @@ export default class Character {
     this.armorType = {};
   }
 
-  addClass(userClass) {
-    this.pcClass = userClass;
+  createCharacter(userInputC, userInputW, userInputA) {
+    // this.pcClass = userInputC;
+    // this.weaponType = userInputW;
+    // this.armorType = userInputA;
   }
 
-  addWeapon(userWeapon) {
-    this.weaponType = userWeapon;
-  }
 
-  addArmor(userArmor) {
-    this.armorType = userArmor;
-  }
+  // addClass(userClass) {
+  //   this.pcClass = userClass;
+  // }
+
+  // addWeapon(userWeapon) {
+  //   this.weaponType = userWeapon;
+  // }
+
+  // addArmor(userArmor) {
+  //   this.armorType = userArmor;
+  // }
 }
