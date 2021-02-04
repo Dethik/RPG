@@ -23,4 +23,4 @@ describe('Combat', () => {
     expect(newCombat).toEqual({"dmgDeal": 0, "enemyHpRemain": 8, "playerHpRemain": 16, "roll": 0, "turns": 0}
     );
   });
-})
+});

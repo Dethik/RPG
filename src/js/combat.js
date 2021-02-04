@@ -15,11 +15,11 @@ export class Enemy {
 
 export class Combat {
   constructor(playerHpRemain, enemyHpRemain) {
-    // this.turns = 0;
-    // this.roll = 0;
-    // this.dmgDeal = 0;
-    // this.playerHpRemain = playerHpRemain;
-    // this.enemyHpRemain = enemyHpRemain;
+    this.turns = 0;
+    this.roll = 0;
+    this.dmgDeal = 0;
+    this.playerHpRemain = playerHpRemain;
+    this.enemyHpRemain = enemyHpRemain;
   }
   addPlayerHp() {
 
