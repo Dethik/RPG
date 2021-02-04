@@ -28,7 +28,7 @@ export class Combat {
     this.roll = 3
     // this.roll = Math.floor(Math.random() * Math.floor(6)) + 1
     if (this.roll > this.enemyCon) {
-      return "true";
+      return true;
     //   this.enemyHpRemain = enemy.hp - character.weaponType.dmg
     } else {
       return "miss";
