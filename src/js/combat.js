@@ -4,12 +4,13 @@ import { weapons } from "./weapons.js"
 import { armors } from "./armors.js"
 
 export class Enemy {
-  constructor(lvl, hp, atk, dmg, xp) {
+  constructor(lvl, hp, atk, dmg, xp, con) {
     this.lvl = lvl;
     this.hp = hp;
     this.atk = atk;
     this.dmg = dmg;
     this.xp = xp
+    this.con = con
   }
 }
 
@@ -21,8 +22,14 @@ export class Combat {
     this.playerHpRemain = playerHpRemain;
     this.enemyHpRemain = enemyHpRemain;
   }
-  addPlayerHp() {
-
+  playerTurn() {
+    // this.turns += 1;
+    // const attackRoll = Math.floor(Math.random() * Math.floor(6)) + 1
+    // if (attackRoll > enemy.con) {
+    //   this.enemyHpRemain = enemy.hp - character.weaponType.dmg
+    // } else {
+    //   return "miss";
+    // }
   }
 }
 //combat constructor
