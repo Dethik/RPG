@@ -1,10 +1,10 @@
 export default class Enemy {
   constructor(lvl, hp, atk, dmg, xp) {
-    // this.lvl = lvl,
-    // this.hp = hp,
-    // this.atk = atk,
-    // this.dmg = dmg,
-    // this.xp = xp
+    this.lvl = lvl;
+    this.hp = hp;
+    this.atk = atk;
+    this.dmg = dmg;
+    this.xp = xp
   }
   // const thug = new Enemy(1, 8, 3, 2, 10)
 }
