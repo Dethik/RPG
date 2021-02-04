@@ -19,6 +19,6 @@ export default class Character {
   }
 
   addArmor(userArmor) {
-    
+    this.armorType = userArmor;
   }
 }
