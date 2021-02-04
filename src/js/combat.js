@@ -1,4 +1,9 @@
-export default class Enemy {
+import Character from "./character.js"
+import { classes } from "./classes.js"
+import { weapons } from "./weapons.js"
+import { armors } from "./armors.js"
+
+export class Enemy {
   constructor(lvl, hp, atk, dmg, xp) {
     this.lvl = lvl;
     this.hp = hp;
@@ -6,11 +11,20 @@ export default class Enemy {
     this.dmg = dmg;
     this.xp = xp
   }
-  // const thug = new Enemy(1, 8, 3, 2, 10)
 }
-// Enemy constructor
-// lvl, hp, atk, dmg, xp(based off lvl)
 
+export class Combat {
+  constructor(playerHpRemain, enemyHpRemain) {
+    // this.turns = 0;
+    // this.roll = 0;
+    // this.dmgDeal = 0;
+    // this.playerHpRemain = playerHpRemain;
+    // this.enemyHpRemain = enemyHpRemain;
+  }
+  addPlayerHp() {
+
+  }
+}
 //combat constructor
   //turns taken
   //damage dealt
