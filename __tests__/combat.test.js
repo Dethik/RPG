@@ -13,7 +13,7 @@ describe('Enemy', () => {
 
 describe('Combat', () => {
   test('That the combat constructor creates an object containing combat stats', () => {
-    const thug = new Enemy(1, 8, 3, 2, 10)
+    const thug = new Enemy(1, 8, 3, 2, 10, 2)
     const name = "Brute"
     const userInputA = armors.Power
     const userInputW = weapons.Melee
@@ -27,7 +27,7 @@ describe('Combat', () => {
 
 describe('playerTurn', () => {
   test('That the player has missed', () => {
-    const thug = new Enemy(1, 8, 3, 2, 10)
+    const thug = new Enemy(1, 8, 3, 2, 10, 2)
     const name = "Brute"
     const userInputA = armors.Power
     const userInputW = weapons.Melee
@@ -47,5 +47,11 @@ describe('playerTurn', () => {
     // const attackRoll = Math.floor(Math.random() * Math.floor(6)) + 1
     expect(combat.roll).toBeGreaterThan(0);
     expect(combat.roll).toBeLessThanOrEqual(6);
+  })
+  test('checks roll against constitution for hit', () => {
+    const thug = new Enemy(1, 8, 3, 2, 10, 2)
+    const combat = new Combat(0, thug.hp, thug.con);
+    combat.playerTurn();
+    expect(combat.playerTurn()).toEqual(true);
   })
 });
