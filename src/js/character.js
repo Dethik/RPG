@@ -11,6 +11,6 @@ export default class Character {
   }
 
   addClass(userClass) {
-    // this.pcClass = userClass;
+    this.pcClass = userClass;
   }
 }
