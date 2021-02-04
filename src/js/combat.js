@@ -23,7 +23,7 @@ export class Combat {
     this.enemyHpRemain = enemyHpRemain;
   }
   playerTurn() {
-    // this.turns += 1;
+    this.turns += 1;
     // const attackRoll = Math.floor(Math.random() * Math.floor(6)) + 1
     // if (attackRoll > enemy.con) {
     //   this.enemyHpRemain = enemy.hp - character.weaponType.dmg
