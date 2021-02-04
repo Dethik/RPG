@@ -36,4 +36,9 @@ describe('playerTurn', () => {
     const newCombat = new Combat(char.pcClass.hp, thug.hp)
     expect(newCombat.playerTurn()).toEqual("miss")
   })
+  test('increases turn count by one', () => {
+    const combat = new Combat();
+    combat.playerTurn();
+    expect(combat.turns).toEqual(1);
+  })
 });
