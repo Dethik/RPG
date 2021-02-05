@@ -15,23 +15,24 @@ export class Enemy {
 }
 
 export class Combat {
-  constructor(playerHpRemain, enemyHpRemain, enemyCon) {
+  constructor(playerHpRemain, enemyHpRemain, enemyCon, playerWeap) {
     this.turns = 0;
     this.roll = 0;
     this.dmgDeal = 0;
     this.playerHpRemain = playerHpRemain;
     this.enemyHpRemain = enemyHpRemain;
     this.enemyCon = enemyCon
+    this.playerWeap = playerWeap
   }
   playerTurn() {
     this.turns += 1;
-    this.roll = 3
-    // this.roll = Math.floor(Math.random() * Math.floor(6)) + 1
+    // this.roll = 3
+    this.roll = Math.floor(Math.random() * Math.floor(6)) + 1
     if (this.roll > this.enemyCon) {
-      return true;
-    //   this.enemyHpRemain = enemy.hp - character.weaponType.dmg
+      // return true;
+      this.enemyHpRemain -= this.playerWeap
     } else {
-      return "miss";
+      this.enemyHpRemain
     }
   }
 }

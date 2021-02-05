@@ -33,8 +33,8 @@ describe('playerTurn', () => {
     const userInputW = weapons.Melee
     const userInputC = classes.medic
     const char = new Character(name, userInputC, userInputW, userInputA);
-    const newCombat = new Combat(char.pcClass.hp, thug.hp)
-    expect(newCombat.playerTurn()).toEqual("miss")
+    const combat = new Combat(0, thug.hp, thug.con, userInputW.dmg);
+    expect(thug.hp).toEqual(combat.enemyHpRemain)
   })
   test('increases turn count by one', () => {
     const combat = new Combat();
@@ -50,8 +50,27 @@ describe('playerTurn', () => {
   })
   test('checks roll against constitution for hit', () => {
     const thug = new Enemy(1, 8, 3, 2, 10, 2)
-    const combat = new Combat(0, thug.hp, thug.con);
+    const name = "Brute"
+    const userInputA = armors.Power
+    const userInputW = weapons.Melee
+    const userInputC = classes.medic
+    const char = new Character(name, userInputC, userInputW, userInputA);
+    const combat = new Combat(0, thug.hp, thug.con, userInputW.dmg);
     combat.playerTurn();
-    expect(combat.playerTurn()).toEqual(true);
+    expect(combat.enemyHpRemain).toEqual(combat.enemyHpRemain);
+  })
+  test('checks roll to damage enemy', () => {
+    const thug = new Enemy(1, 8, 3, 2, 10, 2)
+    const name = "Brute"
+    const userInputA = armors.Power
+    const userInputW = weapons.Melee
+    const userInputC = classes.medic
+    const char = new Character(name, userInputC, userInputW, userInputA);
+    const combat = new Combat(0, thug.hp, thug.con, userInputW.dmg);
+    combat.playerTurn();
+    expect(combat.enemyHpRemain).toBeGreaterThan(0);
+    // expect(combat.enemyHpRemain).toBeLessThanOrEqual(1);
+    // expect(combat.enemyHpRemain).toBeGreaterThan(7);
+    expect(combat.enemyHpRemain).toBeLessThanOrEqual(9);
   })
 });
