@@ -1,8 +1,8 @@
-import { soldier, techromancer, medic, scoundrel } from "../src/js/classes.js"
+import { classes } from "../src/js/classes.js"
 
 describe('soldier', () => {
   test('should apply predefined stat values to soldier class', () => {
-    expect(soldier).toEqual({
+    expect(classes.soldier).toEqual({
       hp: 20,
       str: 6,
       dex: 1,
@@ -16,7 +16,7 @@ describe('soldier', () => {
 });
 describe('techromancer', () => {
   test('should check predefined stat values of the techromancer', () => {
-    expect(techromancer).toEqual({
+    expect(classes.techromancer).toEqual({
       hp: 12,
       str: 1,
       dex: 3,
@@ -30,7 +30,7 @@ describe('techromancer', () => {
 });
 describe('medic', () => {
   test('should check predefined stat values of the medic', () => {
-    expect(medic).toEqual({
+    expect(classes.medic).toEqual({
       hp: 16,
       str: 1,
       dex: 1,
@@ -44,7 +44,7 @@ describe('medic', () => {
 });
 describe('scoundrel', () => {
   test('should check predefined stat values of the scounrel', () => {
-    expect(scoundrel).toEqual({
+    expect(classes.scoundrel).toEqual({
       hp: 12,
       str: 1,
       dex: 6,

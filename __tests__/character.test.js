@@ -1,7 +1,7 @@
 import Character from "../src/js/character.js"
-import { soldier, techromancer, medic, scoundrel } from "../src/js/classes.js"
-import { SMG, AR, SG, Melee, Launchers } from "../src/js/weapons.js"
-import { Power, Heavy, Medium, Light } from '../src/js/armors.js'
+import { classes } from "../src/js/classes.js"
+import { weapons } from "../src/js/weapons.js"
+import { armors } from '../src/js/armors.js'
 
 
 describe('Character', () => {
@@ -14,24 +14,14 @@ describe('Character', () => {
   });
 });
 
-describe('Character.addClass', () => {
-  test('Should properly assign a class to a character', () => {
-    const character = new Character("Brute");
-    // const userClass = soldier;
-    // addClass(userClass) {
-    //   this.pcClass[soldier] = userClass;
-    // }
-    const userClass = "soldier"
-    character.addClass(userClass)
-    expect(character.pcClass).toEqual({
-      hp: 20,
-      str: 6,
-      dex: 1,
-      con: 4,
-      int: 1,
-      wis: 1,
-      cha: 2,
-      atk: 2
-    });
+describe('Character.createCharacter', () => {
+  test('Should properly assign class, weapon, and armor to a character', () => {
+    const userInputA = armors.Power
+    const userInputW = weapons.Melee
+    const userInputC = classes.soldier
+    const name = "Brute"
+    const character = new Character(name, userInputC, userInputW, userInputA);
+    // character.createCharacter(userInputC, userInputW, userInputA)
+    expect(character).toEqual({"armorType": {"con": 4, "str": 3, "wis": 1}, "name": "Brute", "pcClass": {"atk": 2, "cha": 2, "con": 4, "dex": 1, "hp": 20, "int": 1, "str": 6, "wis": 1}, "weaponType": {"atk": 3, "dmg": 7, "str": 2}});
   });
 });

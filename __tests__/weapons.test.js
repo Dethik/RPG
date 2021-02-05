@@ -1,8 +1,8 @@
-import { SMG, AR, SG, Melee, Launchers } from "../src/js/weapons.js"
+import { weapons } from "../src/js/weapons.js"
 
 describe('SMG', () => {
   test('should check predetermined stat values to SMG', () => {
-    expect(SMG).toEqual({
+    expect(weapons.SMG).toEqual({
       dex: 1,
       atk: 4,
       dmg: 5
@@ -12,7 +12,7 @@ describe('SMG', () => {
 
 describe('AR', () => {
   test('should check predetermined stat values to AR', () => {
-    expect(AR).toEqual({
+    expect(weapons.AR).toEqual({
       dex: 2,
       atk: 5,
       dmg: 7
@@ -22,7 +22,7 @@ describe('AR', () => {
 
 describe('SG', () => {
   test('should check predetermined stat values to Shotgun', () => {
-    expect(SG).toEqual({
+    expect(weapons.SG).toEqual({
       str: 1,
       atk: 4,
       dmg: 2*4
@@ -32,7 +32,7 @@ describe('SG', () => {
 
 describe('Melee', () => {
   test('should check predetermined stat values to Melee', () => {
-    expect(Melee).toEqual({
+    expect(weapons.Melee).toEqual({
       str: 2,
       atk: 3,
       dmg: 7
@@ -42,7 +42,7 @@ describe('Melee', () => {
 
 describe('Launchers', () => {
   test('should check predetermined stat values to Kaboomers', () => {
-    expect(Launchers).toEqual({
+    expect(weapons.Launchers).toEqual({
       wis: 3,
       atk: 3,
       dmg: 15
